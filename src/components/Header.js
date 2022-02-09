@@ -3,12 +3,16 @@ import Button from './Button';
 
 // Can be props.title, but can write is as an object destructured:
 const Header = ({ title }) => {
-  return (
-      <header className='header'>
-          <h1>{ title }</h1>
-          <Button color='green' text='Hello' />
-      </header>
-  );
+    const onClick = () => {
+        console.log('click');
+    }
+
+    return (
+        <header className='header'>
+            <h1>{ title }</h1>
+            <Button color='green' text='Hello' onClick={onClick}/>
+        </header>
+    );
 };
 
 /** Another way to pass a prop without passing it in App.js 
