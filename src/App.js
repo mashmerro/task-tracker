@@ -1,25 +1,20 @@
-import logo from './logo.svg';
+//import React from 'react';  // required if working with a class comp, not req with functional comp
 import './App.css';
+import Header from './components/Header.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Header />
     </div>
   );
 }
+
+/** Class Component **/
+// class App extends React.Component {
+//   render() {
+//     return <h1>Hello from a class</h1>;
+//   }
+// }
 
 export default App;
